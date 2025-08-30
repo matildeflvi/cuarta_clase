@@ -1,0 +1,81 @@
+/* 
+   IMPORTAR FUENTE
+*/
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+/* 
+   ESTILOS GENERALES
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #FFA2DA;
+  color: #F290CB;
+  font-family: Helvetica, Arial, sans-serif; /* fuente base para todo */
+}
+
+/* 
+   BLOQUE CENTRAL
+*/
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(80% - 4rem);
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 0 30px mediumvioletred;
+    z-index: 9999;
+}
+
+/* 
+   TITULOS Y SUBTITULOS
+*/
+h1, h2, a {
+  font-family: 'Silkscreen', sans-serif; /* misma fuente */
+}
+
+h1 {
+  font-size: calc(3rem + 5vw);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: calc(1.5rem + 2vw); /* más pequeño que h1 */
+  font-weight: 400; /* más ligero que h1 */
+  margin-bottom: 1rem;
+}
+
+/* 
+   LINKS */
+a {
+  color: #E14CA5;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a[href$=".pdf"] {
+  color: lightblue;
+}
+
+a:hover {
+  color: #c55;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+/* Emoji al final del link en hover */
+a:hover:after {
+  content: "🫐"; /* arándano */
+  margin-left: 0.3rem;
+
+/* 
+   PARRAFOS
+*/
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
